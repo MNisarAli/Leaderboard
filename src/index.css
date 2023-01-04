@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+body {
+  font-family: 'Balsamiq Sans', cursive, sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 55px;
+  margin-bottom: 60px;
+  margin-top: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 4fr 2fr;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#scores-container {
+  grid-column: 2;
+}
+
+#list-headline {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  padding: 0 5px;
+  border: 2.5px solid;
+  box-shadow: 3px 3px black;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#refresh-btn {
+  padding: 3px 15px;
+}
+
+#scores-list {
+  font-size: 15px;
+  font-weight: 600;
+  list-style: none;
+  border: 2.5px solid;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.score {
+  padding: 5px;
+}
+
+.score:nth-child(even) {
+  background: #ddd;
+}
+
+#scores-input-container {
+  grid-column: 4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+input {
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 14px;
+  border: 2.5px solid;
+  margin-bottom: 1.2rem;
+  padding: 4px 10px;
+}
+
+::placeholder {
+  color: #000;
+}
+
+#submit-btn {
+  align-self: flex-end;
+  padding: 3px 12px;
+}
