@@ -116,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _modules_restApi_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/restApi.js */ \"./src/modules/restApi.js\");\n\n\n\nconst form = document.querySelector('form');\nconst userName = document.querySelector('#name');\nconst userScore = document.querySelector('#score');\nconst scoresList = document.querySelector('#scores-list');\nconst refreshBtn = document.querySelector('#refresh-btn');\n\nform.addEventListener('submit', async (event) => {\n  event.preventDefault();\n  const score = {\n    user: userName.value,\n    score: userScore.value,\n  };\n  userName.value = '';\n  userScore.value = '';\n  await (0,_modules_restApi_js__WEBPACK_IMPORTED_MODULE_1__.setData)(score);\n});\n\n// Get List of Scores on Page Load\nconst getScores = async () => {\n  scoresList.innerHTML = '';\n  const scores = await (0,_modules_restApi_js__WEBPACK_IMPORTED_MODULE_1__.getData)();\n  scores.result.forEach((item) => {\n    const li = document.createElement('li');\n    li.classList.add('score');\n    li.innerHTML = `${item.user}: ${item.score}`;\n    scoresList.appendChild(li);\n  });\n};\ngetScores();\n\n// Updated List of Scores by Pressing Refresh Btn\nrefreshBtn.addEventListener('click', async () => {\n  getScores();\n});\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/restApi.js":
+/*!********************************!*\
+  !*** ./src/modules/restApi.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getData\": () => (/* binding */ getData),\n/* harmony export */   \"setData\": () => (/* binding */ setData)\n/* harmony export */ });\nconst apiUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ss3Eyn4cLT7TlGq5hYgj/scores/';\n\nconst getData = async () => {\n  const getApiData = await fetch(apiUrl);\n  const result = await getApiData.json();\n  return result;\n};\n\nconst setData = async (scores) => {\n  const setApiData = await fetch(apiUrl, {\n    method: 'POST',\n    headers: { 'Content-Type': 'application/json' },\n    body: JSON.stringify(scores),\n  });\n  const result = await setApiData.json();\n  return result;\n};\n\n\n\n\n//# sourceURL=webpack://leaderboard/./src/modules/restApi.js?");
 
 /***/ })
 
