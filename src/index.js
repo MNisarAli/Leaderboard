@@ -5,6 +5,7 @@ const form = document.querySelector('form');
 const userName = document.querySelector('#name');
 const userScore = document.querySelector('#score');
 const scoresList = document.querySelector('#scores-list');
+const refreshBtn = document.querySelector('#refresh-btn');
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -29,3 +30,8 @@ const getScores = async () => {
   });
 };
 getScores();
+
+// Updated List of Scores by Pressing Refresh Btn
+refreshBtn.addEventListener('click', async () => {
+  getScores();
+});
