@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Balsamiq Sans', cursive, sans-serif;
+  background-color: #deb8878a;
   margin: 0;
   padding: 2rem;
 }
@@ -15,7 +16,7 @@ h1 {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr 4fr 2fr;
+  grid-template-columns: 1fr 8fr 1fr 6fr 2fr;
 }
 
 h2 {
@@ -66,6 +67,10 @@ button:hover {
   padding: 5px;
 }
 
+.score:nth-child(odd) {
+  background: #fff;
+}
+
 .score:nth-child(even) {
   background: #ddd;
 }
@@ -96,4 +101,31 @@ input {
 #submit-btn {
   align-self: flex-end;
   padding: 3px 12px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 2rem 1.4rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.55rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  main {
+    grid-template-columns: 1fr 8fr 1fr 6fr 1fr;
+  }
 }
