@@ -48,6 +48,11 @@ button {
 
 button:hover {
   cursor: pointer;
+  background-color: #dcdcdc;
+}
+
+button:active {
+  border-style: double;
 }
 
 #refresh-btn {
