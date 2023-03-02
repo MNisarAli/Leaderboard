@@ -127,6 +127,7 @@ input {
   box-shadow: 0 0 1rem rgb(0 0 0 / 50%);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  min-width: 16.5rem;
 }
 
 #notification.show {
