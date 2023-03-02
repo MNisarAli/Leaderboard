@@ -64,8 +64,10 @@ button:active {
   font-weight: 600;
   list-style: none;
   border: 2.5px solid;
-  padding: 0;
+  overflow-y: scroll;
   margin-top: 25px;
+  max-height: 30vh;
+  padding: 0;
 }
 
 .score {
