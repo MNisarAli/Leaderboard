@@ -48,6 +48,11 @@ button {
 
 button:hover {
   cursor: pointer;
+  background-color: #dcdcdc;
+}
+
+button:active {
+  border-style: double;
 }
 
 #refresh-btn {
@@ -59,8 +64,10 @@ button:hover {
   font-weight: 600;
   list-style: none;
   border: 2.5px solid;
-  padding: 0;
+  overflow-y: scroll;
   margin-top: 25px;
+  max-height: 30vh;
+  padding: 0;
 }
 
 .score {
@@ -85,6 +92,10 @@ form {
   margin-top: 25px;
 }
 
+label {
+  display: inline-grid;
+}
+
 input {
   font-family: inherit;
   font-weight: 800;
@@ -101,6 +112,26 @@ input {
 #submit-btn {
   align-self: flex-end;
   padding: 3px 12px;
+}
+
+#notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border: 3px solid;
+  background-color: #dcdcdc;
+  box-shadow: 0 0 1rem rgb(0 0 0 / 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  min-width: 16.5rem;
+}
+
+#notification.show {
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
