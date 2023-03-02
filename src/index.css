@@ -90,6 +90,10 @@ form {
   margin-top: 25px;
 }
 
+label {
+  display: inline-grid;
+}
+
 input {
   font-family: inherit;
   font-weight: 800;
