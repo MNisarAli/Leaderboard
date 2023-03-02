@@ -27,8 +27,12 @@
     <section id="scores-input-container">
       <h2>Add your score</h2>
       <form>
-        <input type="text" name="name" id="name" placeholder="Your name" minlength="2" maxlength="30">
-        <input type="number" name="score" id="score" placeholder="Your score" min="0" max="1000">
+        <label for="name">
+          <input type="text" name="name" id="name" placeholder="Your name" minlength="2" maxlength="30" required>
+        </label>
+        <label for="score">
+          <input type="number" name="score" id="score" placeholder="Your score" min="0" max="1000" required>
+        </label>
         <button type="submit" id="submit-btn">Submit</button>
       </form>
     </section>
