@@ -10,7 +10,10 @@
 
 <body>
   <header>
-    <h1>Leaderboard</h1>
+    <h1>
+      Leaderboard
+      <span>🏆</span>
+    </h1>
   </header>
 
   <main>
@@ -20,7 +23,7 @@
         <button type="button" id="refresh-btn">Refresh</button>
       </div>
       <ul id="scores-list">
-
+        <!-- Scores will be dynamically added here -->
       </ul>
     </section>
 
@@ -35,14 +38,24 @@
         </label>
         <button type="submit" id="submit-btn">Submit</button>
       </form>
+
+      <!-- Notification Popup -->
+      <div id="notification">
+        <span id="popup">
+          <h2>Thank You!</h2>
+          <p>Your scores have been submitted successfully.</p>
+        </span>
+      </div>
     </section>
-    
-    <!-- Notification Popup -->
-    <div id="notification">
-      <h2>Thank You!</h2>
-      <p>Your scores have been submitted successfully.</p>
-    </div>
   </main>
+
+  <footer>
+    <p class="copyright">© Copyright 2023 
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/mnisarali">
+        Muhammad Nisar Ali
+      </a> | All Rights Reserved
+    </p>
+  </footer>
 </body>
 
 </html>
