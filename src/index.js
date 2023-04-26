@@ -37,10 +37,19 @@ const getScores = async () => {
   scores.result.sort((a, b) => b.score - a.score);
   let count = 0;
   scores.result.forEach((item) => {
-    count++;
+    count += 1;
     const li = document.createElement('li');
     li.classList.add('score');
-    li.innerHTML = `${count}. ${item.user}: ${item.score}`;
+    // Add icons to the scores
+    if (count === 1) {
+      li.innerHTML = `${count}. ${item.user}: ${item.score} <i class="fas fa-trophy gold"></i>`;
+    } else if (count === 2) {
+      li.innerHTML = `${count}. ${item.user}: ${item.score} <i class="fas fa-trophy silver"></i>`;
+    } else if (count === 3) {
+      li.innerHTML = `${count}. ${item.user}: ${item.score} <i class="fas fa-trophy bronze"></i>`;
+    } else {
+      li.innerHTML = `${count}. ${item.user}: ${item.score} <i class="fas fa-medal"></i>`;
+    }
     scoresList.appendChild(li);
   });
   // Remove spinner from container
