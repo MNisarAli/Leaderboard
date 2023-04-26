@@ -48,5 +48,5 @@ getScores();
 
 // Updated List of Scores by Pressing Refresh Btn
 refreshBtn.addEventListener('click', async () => {
-  getScores();
+  await getScores();
 });
