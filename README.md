@@ -1,15 +1,15 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="https://github.com/microverseinc/readme-template/blob/master/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./src/favicon.ico" alt="logo" width="140"  height="auto" />
   <br/>
-  <h3><b>Microverse README Template</b></h3>
+  <h1><b>Leaderboard</b></h1>
 </div>
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Leaderboard ](#-leaderboard-)
+- [👑 Leaderboard ](#-leaderboard-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -20,32 +20,32 @@
     - [Usage](#usage)
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
+  - [💖 Show your support ](#-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
 
-# 📖 Leaderboard <a name="about-project"></a>
+# 👑 Leaderboard <a name="about-project"></a>
 
-> "Leaderboard" is website displays scores submitted by various players and allows users to submit their own scores. The data is securely preserved using an external Leaderboard API service.
+"Leaderboard" is a website that displays scores submitted by various players and allows users to submit their own scores. The data is securely preserved using an external Leaderboard API service.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> - HTML5
-> - CSS3
-> - JavaScript(ES6)
-> - Webpack
-> - Leaderboard API
+- HTML5
+- CSS3
+- JavaScript(ES6)
+- Webpack
+- Leaderboard API
 
 ### Key Features <a name="key-features"></a>
 
 The key features of this website include.
 
-> - **Webpack**
-> - **ES6 Syntax**
-> - **Gitflow**
+- **Webpack**
+- **ES6 Syntax**
+- **Gitflow**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -59,20 +59,29 @@ The key features of this website include.
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> To get a local copy up and running, follow these steps.
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need to install npm and node.js
+In order to run this project you need:
+
+- [x] A code editor (like VSCode, Sublime, Atom, etc.)
+- [x] Git and Node.js installed.
 
 ### Setup
 
-Clone this repository to your desired folder:
-1. Use VScode: open terminal in VScode
-2. Navigate to the directory where you want clone the copy of this repository
-3. Create new directory [optional]
-4. Clone the repo using the below command
- > git clone  https://github.com/MNisarAli/Leaderboard.git
+To setup this project locally:
+
+1. Open terminal in VScode.
+2. Navigate to the directory where you want clone the copy of this repository.
+3. Create new directory [optional].
+4. Clone the repo using the below command.
+
+```
+git clone git@github.com:MNisarAli/Leaderboard.git
+
+cd Leaderboard
+```
 
 ### Usage
 
@@ -83,13 +92,13 @@ This project can be used to practice Webpack and Leaderboard API.
 
 ## 👥 Authors <a name="authors"></a>
 
-> The collaborators of this project.
+The collaborators of this project.
 
-👤 **M Nisar Ali**
+👨‍🚀 **M Nisar Ali**
 
 - GitHub: [@MNisarAli](https://github.com/MNisarAli)
-- Twitter: [@drnisar_ali](https://twitter.com/drnisar_ali)
-- LinkedIn: [Muhammad Nisar Ali](https://linkedin.com/in/muhammad-nisar-ali-45a865251)
+- Gmail: [@dr.nisaralig@gmail.com](mailto:dr.nisaralig@gmail.com)
+- LinkedIn: [@Muhammad Nisar Ali](https://www.linkedin.com/in/muhammad-nisar-ali)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -98,26 +107,26 @@ This project can be used to practice Webpack and Leaderboard API.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/MNisarAli/Leaderboard/issues).
+Feel free to check the [issues page](../../issues/).
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ⭐️ Show your support <a name="support"></a>
+## 💖 Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+Give a ⭐️, if you like this project!, also follow me on [GitHub](https://github.com/MNisarAli) & [LinkedIn](https://www.linkedin.com/in/muhammad-nisar-ali).
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank:
-- [Microverseinc](https://github.com/microverseinc) for.
-  - [Readme-template](https://github.com/microverseinc/readme-template)
-
-- [Webpack](https://webpack.js.org/guides/getting-started/)
+I would like to thank:
+- [Microverseinc](https://github.com/microverseinc) for [Readme-template](https://github.com/microverseinc/readme-template).
+- [Andrey Sitnik](https://github.com/ai), author of [PostCSS](https://github.com/postcss/postcss), [Autoprefixer](https://github.com/postcss/autoprefixer), and other awesome tools.
 - [Leaderboard API](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
+- [Webpack](https://webpack.js.org/guides/getting-started/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
