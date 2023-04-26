@@ -35,10 +35,12 @@ const getScores = async () => {
   const scores = await getData();
   // Sort Scores in Descending Order
   scores.result.sort((a, b) => b.score - a.score);
+  let count = 0;
   scores.result.forEach((item) => {
+    count++;
     const li = document.createElement('li');
     li.classList.add('score');
-    li.innerHTML = `${item.user}: ${item.score}`;
+    li.innerHTML = `${count}. ${item.user}: ${item.score}`;
     scoresList.appendChild(li);
   });
   // Remove spinner from container
