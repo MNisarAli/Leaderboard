@@ -28,6 +28,10 @@ form.addEventListener('submit', async (event) => {
 // Get List of Scores on Page Load
 const getScores = async () => {
   scoresList.innerHTML = '';
+  const spinner = document.createElement('div');
+  spinner.classList.add('spinner');
+  // Add spinner to container
+  scoresList.appendChild(spinner);
   const scores = await getData();
   // Sort Scores in Descending Order
   scores.result.sort((a, b) => b.score - a.score);
@@ -37,6 +41,8 @@ const getScores = async () => {
     li.innerHTML = `${item.user}: ${item.score}`;
     scoresList.appendChild(li);
   });
+  // Remove spinner from container
+  scoresList.removeChild(spinner);
 };
 getScores();
 
